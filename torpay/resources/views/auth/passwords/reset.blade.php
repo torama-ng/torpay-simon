@@ -2,6 +2,10 @@
 
 @section('content')
 <div class="container">
+        <div class="jumbotron bg-secondary text-white">
+                <h1 class="text-center">Torama payment portal</h1> 
+                <p class="text-center "></p> 
+              </div>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

@@ -2,6 +2,10 @@
 
 @section('content')
 <div class="container">
+        <div class="jumbotron bg-secondary text-white">
+                <h1 class="text-center">Torama payment portal</h1> 
+                <p class="text-center "></p> 
+              </div>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -53,13 +57,13 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-success">
                                     {{ __('Login') }}
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                    <a class="btn bg-danger" href="{{ route('password.request') }}">
+                                        {{ __('Lost Password?') }}
                                     </a>
                                 @endif
                             </div>
