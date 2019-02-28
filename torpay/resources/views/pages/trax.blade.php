@@ -31,7 +31,7 @@
     </a>
     <a href="/all_transactions">
     <button type="button" class="btn btn-warning">
-        Process <span class="badge badge-light">     {{$count_all_tranx}}</span>
+        Sent <span class="badge badge-light">     {{$count_all_tranx}}</span>
       </button>
     </a>
 
