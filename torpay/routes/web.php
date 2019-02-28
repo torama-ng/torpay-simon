@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'pagesController@index');
+Route::get('/', 'PagesController@index');
 // Route::get('/login', 'pagesController@login');
 // Route::get('/register', 'pagesController@register');
 // Route::get('/services', 'pagesController@services');
@@ -28,6 +28,12 @@ Route::get('/paynow', 'DashboardController@paynow');
 Route::get('/payment', 'DashboardController@payment');
 Route::post('/payment', 'DashboardController@payment_post');
 Route::post('/request', 'DashboardController@request');
+Route::get('/services', 'pagesController@services');
+Route::get('/about', 'PagesController@about');
+Route::get('/privacy', 'PagesController@privacy');
+Route::get('/policy', 'PagesController@policy');
+Route::get('/contact', 'PagesController@contact');
+
 
 
 

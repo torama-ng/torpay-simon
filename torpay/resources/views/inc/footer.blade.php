@@ -1,9 +1,9 @@
 <footer>
         <ul>
-          <li><a href="/privacy"><i class="fa fa-twitter-square"></i></a> privacy</li>
-          <li><a href="/legal"><i class="fa fa-facebook-square"></i>legal</a></li>
-          <li><a href="/feedback"><i class="fa fa-snapchat-square"></i>Feedback</a></li>
-          <li><a href="/privacy"><i class="fa fa-pinterest-square"></i></a>Privacy</li>
+          <li><a href="/about"><i class="fa fa-twitter-square"></i> About</a></li>
+          <li><a href="/services"><i class="fa fa-facebook-square"></i>Services</a></li>
+          <li><a href="/contact"><i class="fa fa-snapchat-square"></i>Contact us</a></li>
+          <li><a href="/policy"><i class="fa fa-pinterest-square"></i>Policy</a></li>
           <li><a href="#"><i class="fa fa-github-square"></i></a></li>
         </ul>
         <p>Torama pay</p>

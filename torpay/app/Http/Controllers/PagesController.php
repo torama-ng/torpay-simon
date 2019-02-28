@@ -23,6 +23,13 @@ class PagesController extends Controller
     public function register(){
         return view('pages.register');
     }
+    public function policy(){
+        return view('pages.policy');
+    }
+    public function contact(){
+        return view('pages.contact');
+    }
+   
 }
 
 ?>

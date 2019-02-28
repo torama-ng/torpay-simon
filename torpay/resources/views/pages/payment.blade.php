@@ -48,7 +48,7 @@ $gtpay_hash = hash('sha512', $hashed);
         <div class="panel panel-default credit-card-box">
                 <div class="panel-heading display-table">
                   <div class="row display-tr">
-                    <h3 class="panel-title display-td">Torama Pay</h3>         
+                    <h3 class="panel-title display-td">Torama Pay</h3> <hr>        
                     <img class="img-responsive pull-right" src="{{ asset('images/paylogo.png') }}" alt="Interswitch"/>
                   </div>           
                           <p>Torama online payment interface.</p>
@@ -132,16 +132,19 @@ $gtpay_hash = hash('sha512', $hashed);
                                    </td>
                             </tr>
                             
-                    <div class="list-group">
+                    <div class="list">
                             <h6 class="list-group-item"> Transaction id:  {{$gtpay_tranx_id}} </h6>
                             <h6 class="list-group-item"> Amount: # {{$gtpay_tranx_amt = $_POST["gtpay_tranx_amt"]}}</h6>
                             <h6 class="list-group-item">Customer id: {{$gtpay_cust_id}}</h6>
                             <h6 class="list-group-item"> Customer name: {{$gtpay_cust_name}}</h6> 
+                           
                         </div>
                             <button class="blueButton" style="float:center;" type="submit">Confirm payment</button>
                             <br><br>                      
     </form>
-<
+    
+
+   
 </div>
                 
             

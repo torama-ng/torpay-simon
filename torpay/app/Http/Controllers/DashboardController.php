@@ -118,6 +118,7 @@ class DashboardController extends Controller
         $mydata->save();
         return view('pages.payment', compact('gtpay_tranx_id','gtpay_cust_id', 'gtpay_tranx_amt', 'gtpay_tranx_id'));
     }
+   
 
     // transaction function
     // public function transactions(){

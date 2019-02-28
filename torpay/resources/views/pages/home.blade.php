@@ -70,9 +70,9 @@
    We’re excited to back such people in one of the world’s fastest-growing regions.</p>
     <hr>
 
-    <form method="POST">
+    <form method="">
         <input type="email" name="email" placeholder="Email">
-        <a href="" ><button type="submit"  class="btn bg-primary">Subscribe now</button> </a>
+        <a href="/" ><button type=""  class="btn bg-primary">Subscribe now</button> </a>
     </form>
 </section>
 </div>

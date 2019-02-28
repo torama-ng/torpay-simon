@@ -8,12 +8,19 @@
 
 
  <div class="jumbotron text-center">
-        <h1>Powering  businesses in Nigeria</h1> 
-        <p>Toramapay is a payment system for  solving payments problems for ambitious businesses.
-            </p> 
+        <h1>Our Services</h1> 
+      
       </div>
-    
-      <p class="text-center">
-     
-     <p ><small><b></b></small></p>
+    <div class="container text-center">
+        <h3>We Scale our business to reach a global audience</h3> <br>
+
+        <p>Torama is the fast, simplest way to start accepting online payments from our customers in Nigeria </p> <br>
+
+        <p>
+                We sell and receive pament from our customers  and reach new
+                 customers all over the Nigeria. Torama payment system 
+                  accepting payments from
+                  all  local transactions.
+        </p>
+    </div>
  @endsection
