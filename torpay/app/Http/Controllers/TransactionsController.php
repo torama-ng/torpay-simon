@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Transaction;
+use App\Total_trax;
 use Auth;
 
 class TransactionsController extends Controller
@@ -17,12 +18,14 @@ class TransactionsController extends Controller
     {
     //  $my_trax =  Transaction::all()->where('customer_name', 'swagasoft@gmail.com')->get();
                  $current_user =  Auth::user()->email;
-     $my_trax =  Transaction::select()->where('customer_name', $current_user)->get();
+     $my_trax =  Transaction::select()->where('customer_name', $current_user)->get()->reverse();
+     $all_tranx = \DB::table('total_traxs')->where('customer_name', $current_user)->get()->toArray();
         $total = count($my_trax);
+        $count_all_tranx = count($all_tranx);
      
     //  $my_trax =  \DB::table('transactions')->pluck('customer_name', 'swagasoft@gmail.com');
     
-        return view('pages.trax', compact('my_trax','total'));
+        return view('pages.trax', compact('my_trax','total', 'count_all_tranx'));
     }
 
     /**

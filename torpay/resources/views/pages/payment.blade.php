@@ -20,6 +20,25 @@ $hashed = $gtpay_mert_id . $gtpay_tranx_id . $gtpay_tranx_amt . $gtpay_tranx_cur
 $gtpay_hash = hash('sha512', $hashed);
   @endphp
 
+<div class="container alert alert-warning">
+    
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item  ">
+      <a class="nav-link bg-dark" href="/trax">My transactions</a>
+    </li>
+    
+    <li class="nav-item ">
+      <a class="nav-link bg-dark " href="/paynow">pay now</a>
+    </li>
+    <li class="nav-item  ">
+      <a class="nav-link bg-dark " href="/dash">Dashboard</a>
+    </li>
+    <li class="nav-item  ">
+      <a class="nav-link bg-dark " href="/profile">Profile</a>
+    </li>
+    
+  </ul><br>
+</div>
 
 
                   <td colspan="3">

@@ -7,7 +7,7 @@
 
 
 
- <div class="jumbotron text-center">
+ <div class="jumbotron text-center alert alert-info">
         <h1>Our Services</h1> 
       
       </div>

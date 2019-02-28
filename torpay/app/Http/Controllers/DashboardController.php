@@ -118,7 +118,30 @@ class DashboardController extends Controller
         $mydata->save();
         return view('pages.payment', compact('gtpay_tranx_id','gtpay_cust_id', 'gtpay_tranx_amt', 'gtpay_tranx_id'));
     }
-   
+    
+    public function more_details(){
+        $selected_trax  = $_REQUEST['my_trax_id'];
+        $this_trax = \DB::table('transactions')->where('transaction_id', $selected_trax)->get();
+       return view('pages.details', compact('this_trax'));
+    }
+    
+
+    public function all_more(){
+        $selected_trax  = $_REQUEST['my_trax_id'];
+        $this_trax = \DB::table('total_traxs')->where('transaction_id', $selected_trax)->get();
+       return view('pages.all_details', compact('this_trax'));
+        // return  ($this_trax);
+    }
+    public function all_transactions(){
+        $current_user =  Auth::user()->email;
+        $my_trax =  Transaction::select()->where('customer_name', $current_user)->get()->reverse();
+        $my_all_trax =  Total_trax::select()->where('customer_name', $current_user)->get()->reverse();
+        $all_tranx = \DB::table('total_traxs')->where('customer_name', $current_user)->get()->toArray();
+           $total = count($my_trax);
+           $count_all_tranx = count($all_tranx);
+            return view('pages.all_tranx', compact('my_all_trax','total', 'count_all_tranx'));
+       
+    }
 
     // transaction function
     // public function transactions(){

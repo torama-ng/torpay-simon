@@ -1,35 +1,33 @@
 
 @extends('layouts.app')
 @section('content')
-<div class="container">
+<div class="container alert alert-warning">
     
-        <ul class="nav nav-pills nav-justified">
-          <li class="nav-item  ">
-            <a class="nav-link active" href="/trax">My transactions</a>
-          </li>
-          
-          <li class="nav-item ">
-            <a class="nav-link active " href="/paynow">pay now</a>
-          </li>
-          <li class="nav-item  ">
-            <a class="nav-link active " href="/dash">Dashboard</a>
-          </li>
-          <li class="nav-item  ">
-            <a class="nav-link active " href="/profile">Profile</a>
-          </li>
-          
-        </ul><br>
-      
-      
-     
-      </div>
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item  ">
+      <a class="nav-link bg-dark" href="/trax">My transactions</a>
+    </li>
+    
+    <li class="nav-item ">
+      <a class="nav-link bg-dark " href="/paynow">pay now</a>
+    </li>
+    <li class="nav-item  ">
+      <a class="nav-link bg-dark " href="/dash">Dashboard</a>
+    </li>
+    <li class="nav-item  ">
+      <a class="nav-link bg-dark " href="/profile">Profile</a>
+    </li>
+    
+  </ul><br>
+</div>
      
 
 
 @php
     // $gtpay_cust_id = {{$user_id}} ;
     $gtpay_cust_id = time().rand(123, 100);
-$gtpay_tranx_id = rand(100000, 9000000);
+  
+$gtpay_tranx_id =  md5(uniqid(rand(), true));
 
 @endphp
 

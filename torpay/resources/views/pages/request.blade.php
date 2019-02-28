@@ -1,28 +1,25 @@
 @extends('layouts.app')
 @section('content')
   
-<div class="container">
+<div class="container alert alert-warning">
     
-                <ul class="nav nav-pills nav-justified">
-                  <li class="nav-item  ">
-                    <a class="nav-link active" href="/trax">My transactions</a>
-                  </li>
-                  
-                  <li class="nav-item ">
-                    <a class="nav-link active " href="/paynow">pay now</a>
-                  </li>
-                  <li class="nav-item  ">
-                    <a class="nav-link active " href="/dash">Dashboard</a>
-                  </li>
-                  <li class="nav-item  ">
-                    <a class="nav-link active " href="/profile">Profile</a>
-                  </li>
-                  
-                </ul><br>
-              
-              
-             
-              </div>
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item  ">
+      <a class="nav-link bg-dark" href="/trax">My transactions</a>
+    </li>
+    
+    <li class="nav-item ">
+      <a class="nav-link bg-dark " href="/paynow">pay now</a>
+    </li>
+    <li class="nav-item  ">
+      <a class="nav-link bg-dark " href="/dash">Dashboard</a>
+    </li>
+    <li class="nav-item  ">
+      <a class="nav-link bg-dark " href="/profile">Profile</a>
+    </li>
+    
+  </ul><br>
+</div>
 <div class="container">
         @if ($gtpay_tranx_status_code != '00')
         <ul class="list-group">
