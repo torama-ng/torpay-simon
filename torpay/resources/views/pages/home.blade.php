@@ -70,7 +70,8 @@
    We’re excited to back such people in one of the world’s fastest-growing regions.</p>
     <hr>
 
-    <form method="">
+    <form method="POST" action="/subscribe">
+      @csrf
         <input type="email" name="email" placeholder="Email">
         <a href="/" ><button type=""  class="btn bg-primary">Subscribe now</button> </a>
     </form>

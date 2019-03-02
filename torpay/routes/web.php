@@ -36,6 +36,7 @@ Route::get('/about', 'PagesController@about');
 Route::get('/privacy', 'PagesController@privacy');
 Route::get('/policy', 'PagesController@policy');
 Route::get('/contact', 'PagesController@contact');
+Route::post('/subscribe', 'PagesController@subscribe');
 
 
 

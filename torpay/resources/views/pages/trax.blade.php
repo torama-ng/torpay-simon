@@ -70,7 +70,7 @@
         @csrf
       <table class="table">
         <thead>
-          <tr class="alert alert-info">
+          <tr class="alert alert-success">
             <th scope="col"></th>
             <th scope="col">Amount</th>
             <th scope="col">message</th>
