@@ -11,7 +11,7 @@
             <div class="hero-content-area">
             <h1 class="text-success">Torama Pay</h1>
                 <h3>Modern online  payments for Nigeria </h3>
-            <a href="/dash" class="btn bg-success">Get Started</a>
+            <a href="/login" class="btn bg-success">Get Started</a>
             
             </div>
             
