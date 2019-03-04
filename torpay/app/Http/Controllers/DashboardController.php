@@ -139,6 +139,27 @@ class DashboardController extends Controller
             return view('pages.all_tranx', compact('my_all_trax','total', 'count_all_tranx'));
        
     }
+    public function admin(){
+        $current_user =  Auth::user()->email;
+        // check if the user is admin
+        if ($current_user =='admin@gmail.com'){
+            $all_tranx = \DB::table('total_traxs')->get()->toArray();
+            $all_users = \DB::table('users')->get()->toArray();
+            $all_succ_trax = \DB::table('transactions')->get()->toArray();
+            $all_subscribers = \DB::table('sub_models')->get()->toArray();
+          
+            $total_tranx = count($all_tranx);
+            $total_user_count = count($all_users);
+            $all_succ_trax_count = count($all_succ_trax);
+            $all_sub = count($all_subscribers);
+            $failed = $total_tranx - $all_succ_trax_count;
+            return view('pages.admin', compact('total_tranx', 'total_user_count','all_succ_trax_count','all_sub','failed'));
+        }else{
+            return view('pages.no_admin');
+        }
+        
+        }
+    }
 
     // transaction function
     // public function transactions(){
@@ -148,4 +169,4 @@ class DashboardController extends Controller
     //     $tranx = \DB::table('transactions')->where('customer_name', $current_user)->get()->toArray();
     //     return view('pages.transactions',compact('tranx'));
     // }
-}
+

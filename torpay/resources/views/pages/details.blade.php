@@ -27,7 +27,7 @@
     
   <a href="/trax">
     <button type="button" class="btn btn-success">
-       go back <span class="badge badge-light">    </span>
+         <span class="badge badge-light"> Take me back   </span>
       </button>
     </a>
      @foreach ($this_trax as $item)

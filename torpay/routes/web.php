@@ -31,6 +31,7 @@ Route::get('/paynow', 'DashboardController@paynow');
 Route::get('/payment', 'DashboardController@payment');
 Route::post('/payment', 'DashboardController@payment_post');
 Route::post('/request', 'DashboardController@request');
+Route::get('/admin', 'DashboardController@admin');
 Route::get('/services', 'pagesController@services');
 Route::get('/about', 'PagesController@about');
 Route::get('/privacy', 'PagesController@privacy');

@@ -26,7 +26,7 @@
 <div class="container bg-secondary">
     <a href="/all_transactions">
         <button type="button" class="btn btn-warning">
-           go back <span class="badge badge-light">    </span>
+            <span class="badge badge-light">  Take me back </span>
           </button>
         </a>
           
@@ -38,7 +38,7 @@
 <li class="list-group-item ">Transaction id : {{$item->transaction_id}} </li>
 <li class="list-group-item ">Customer id : {{$item->customer_id}} </li>
 <li class="list-group-item ">Transaction amount :  ₦ {{$item->amount}} </li>
-<li class="list-group-item ">Transaction Message : {{$item->memo}} </li>
+<li class="list-group-item ">Transaction Memory : {{$item->memo}} </li>
 <li class="list-group-item ">Customer email : {{$item->customer_name}} </li>
 <li class="list-group-item ">Time : {{$item->created_at}} </li>
 {{-- <li class="list-group-item active">Customer id : {{$item->$customer_id}} </li> --}}

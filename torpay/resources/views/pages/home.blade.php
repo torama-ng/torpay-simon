@@ -11,7 +11,17 @@
             <div class="hero-content-area">
             <h1 class="text-success">Torama Pay</h1>
                 <h3>Modern online  payments for Nigeria </h3>
-            <a href="/login" class="btn bg-success">Get Started</a>
+              
+                @guest 
+              @if (Route::has('register'))
+              <a href="{{ route('login') }}" class="btn bg-success">Get Started</a>
+              @else
+              {{-- <a href="/dash" class="btn bg-success">Dashboard</a> --}}
+              @endif
+                @endguest
+
+            
+           
             
             </div>
             
@@ -72,6 +82,7 @@
 
     <form method="POST" action="/subscribe">
       @csrf
+        <input type="text" name="name" placeholder="name">
         <input type="email" name="email" placeholder="Email">
         <a href="/" ><button type=""  class="btn bg-primary">Subscribe now</button> </a>
     </form>

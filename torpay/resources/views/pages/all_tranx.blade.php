@@ -55,7 +55,7 @@
         </thead>
         <tbody>
           <tr class="">
-            <th scope="row">{{$total = $total -=1}} </th>
+            <th scope="row">{{$count_all_tranx--}} </th>
            
             <td> ₦ {{$item->amount}}</td>
             <td>{{$item->memo}}</td>
@@ -65,7 +65,7 @@
             <td>{{$item->created_at}}</td>
             <td> <button type="submit" class="btn btn-outline-danger">details</button></td>
           </tr>
-          <hr>
+          
         </tbody>
       </table>
     </form>

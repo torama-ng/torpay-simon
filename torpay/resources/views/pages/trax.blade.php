@@ -26,61 +26,36 @@
 
   <a href="/trax">
     <button type="button" class="btn btn-success">
-      Successful  <span class="badge badge-light">     {{$total}}</span>
+      <span class="badge badge-light">   Successful    {{$total}}</span>
       </button>
     </a>
     <a href="/all_transactions">
     <button type="button" class="btn btn-warning">
-        Sent <span class="badge badge-light">     {{$count_all_tranx}}</span>
+       <span class="badge badge-light">     Sent  {{$count_all_tranx}}</span>
       </button>
     </a>
 
 @if (count($my_trax) > 0)
     @foreach ($my_trax as $item)
-  
-    {{-- <div class="container bg-secondary" >
-        <h2 class="text-white" >Transaction Details</h2>
-       
-        <div class="card">
-          <div class="card-body">Transaction id:  {{$item->transaction_id}} </div>
-        </div>
-         <div class="card">
-          <div class="card-body">Amount : #{{$item->amount}}</div>
-        </div>
-         <div class="card">
-          <div class="card-body">Customer id :  {{$item->customer_id}} </div>
-        </div>
-         <div class="card">
-          <div class="card-body">Status Message : {{$item->message}}</div>
-        </div>
-         <div class="card">
-          <div class="card-body">Status Code:  {{$item->status_code}}</div>
-        </div>
-         <div class="card">
-          <div class="card-body">Memory :  {{$item->memo}} </div>
-        </div>
-         <div class="card">
-          <div class="card-body">Time :  {{$item->created_at}} </div>
-        </div>
-      </div> --}}
-      <hr>
+      
+     
 
       {{-- table format  --}}
       <form action="/more_details" method="POST">
         @csrf
-      <table class="table">
-        <thead>
-          <tr class="alert alert-success">
-            <th scope="col"></th>
-            <th scope="col">Amount</th>
-            <th scope="col">message</th>
-            <th scope="col">Transaction id</th>
-            <th scope="col">Date</th>
-          </tr>
-        </thead>
+        <table class="table">
+          <thead>
+            <tr class="alert alert-success">
+              <th scope="col"></th>
+              <th scope="col">Amount</th>
+              <th scope="col">message</th>
+              <th scope="col">Transaction id</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
         <tbody>
           <tr class="">
-            <th scope="row">{{$total  = $total -=1}} </th>
+            <th scope="row">{{$total--}}  </th>
            
             <td> ₦ {{$item->amount}}</td>
             <td>{{$item->message}}</td>
