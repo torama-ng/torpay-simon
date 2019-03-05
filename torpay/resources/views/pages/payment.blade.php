@@ -13,7 +13,7 @@ $gtpay_tranx_curr = "566";
 $gtpay_tranx_amt = $_POST["gtpay_tranx_amt"]."00";
 $gtpay_tranx_memo = $_POST["gtpay_tranx_memo"];
 //$hundred ="00";
-$gtpay_tranx_noti_url = "https://pay.torama.ng/request";
+$gtpay_tranx_noti_url = "http://localhost:8000/request";
 
 //$hashed = $gtpay_mert_id.$gtpay_tranx_id.$gtpay_tranx_amt.$gtpay_tranx_curr.$gtpay_cust_id.$hashkey;
 $hashed = $gtpay_mert_id . $gtpay_tranx_id . $gtpay_tranx_amt . $gtpay_tranx_curr . $gtpay_cust_id . $gtpay_tranx_noti_url . $hashkey;
@@ -31,7 +31,7 @@ $gtpay_hash = hash('sha512', $hashed);
       <a class="nav-link bg-dark " href="{{route('paynow')}} ">pay now</a>
     </li>
     <li class="nav-item  ">
-      <a class="nav-link bg-dark " href="{{route(dash)}} ">Dashboard</a>
+      <a class="nav-link bg-dark " href="{{route('dash')}} ">Dashboard</a>
     </li>
     <li class="nav-item  ">
       <a class="nav-link bg-dark " href="{{route('profile')}} ">Profile</a>
