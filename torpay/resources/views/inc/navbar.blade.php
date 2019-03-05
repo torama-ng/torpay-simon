@@ -20,8 +20,8 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        <a class="nav-item nav-link" href="/services">SERVICES</a>
-            <a class="nav-item nav-link" href="/about">ABOUT</a>
+                        <a class="nav-item nav-link" href="{{ route('services')}} ">SERVICES</a>
+            <a class="nav-item nav-link" href="{{ route('about')}} ">ABOUT</a>
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -32,7 +32,7 @@
                                 </li>
                             @endif
                         @else
-                                <li>  <a href="/dash" class="nav-link ">MY DASHBOARD</a></li>
+                            <li>  <a href="{{route('dash')}}" class="nav-link ">MY DASHBOARD</a></li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -44,7 +44,7 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-                                   <a href="/admin" class="dropdown-item">Admin Dashboard</a>
+                                   <a href="{{route ('admin') }} " class="dropdown-item">Admin Dashboard</a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>

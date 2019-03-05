@@ -142,7 +142,7 @@ class DashboardController extends Controller
     public function admin(){
         $current_user =  Auth::user()->email;
         // check if the user is admin
-        if ($current_user =='admin@gmail.com'){
+        if ($current_user =='toramapay@gmail.com'){
             $all_tranx = \DB::table('total_traxs')->get()->toArray();
             $all_users = \DB::table('users')->get()->toArray();
             $all_succ_trax = \DB::table('transactions')->get()->toArray();

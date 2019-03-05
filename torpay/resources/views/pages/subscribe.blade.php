@@ -13,7 +13,7 @@
   <ul class="nav nav-pills nav-justified">
  
     <li class="nav-item  ">
-      <a class="nav-link bg-dark " href="/dash"> </a>
+      <a class="nav-link bg-dark " href="{{route('dash')}} "> </a>
     </li>
    
     

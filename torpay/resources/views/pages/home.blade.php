@@ -80,7 +80,7 @@
    We’re excited to back such people in one of the world’s fastest-growing regions.</p>
     <hr>
 
-    <form method="POST" action="/subscribe">
+    <form method="POST" action="{{route('subscribe')}} ">
       @csrf
         <input type="text" name="name" placeholder="name">
         <input type="email" name="email" placeholder="Email">

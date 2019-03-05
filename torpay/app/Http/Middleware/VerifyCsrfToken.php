@@ -20,8 +20,10 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
 
-        'https://pay.torama.ng/request',
-        'https://pay.torama.ng/subscribe'
+        // 'https://pay.torama.ng/request',
+        // 'https://pay.torama.ng/subscribe'
+        'http://localhost:8000/request',
+        'https://localhost:8000/subscribe'
 
         //
     ];

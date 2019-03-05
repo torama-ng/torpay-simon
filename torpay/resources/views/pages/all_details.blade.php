@@ -9,13 +9,13 @@
                   </li>
                   
                   <li class="nav-item ">
-                    <a class="nav-link bg-dark " href="/paynow">pay now</a>
+                    <a class="nav-link bg-dark " href="{{ route('paynow')}} ">pay now</a>
                   </li>
                   <li class="nav-item  ">
-                    <a class="nav-link bg-dark  " href="/dash">Dashboard</a>
+                    <a class="nav-link bg-dark  " href="{{route('dash') }} ">Dashboard</a>
                   </li>
                   <li class="nav-item  ">
-                    <a class="nav-link bg-dark " href="/profile">Profile</a>
+                    <a class="nav-link bg-dark " href="{{route('profile')}} ">Profile</a>
                   </li>
                   
                 </ul><br>
@@ -24,7 +24,7 @@
              
               </div>
 <div class="container bg-secondary">
-    <a href="/all_transactions">
+    <a href="{{route('all_transactions')}} ">
         <button type="button" class="btn btn-warning">
             <span class="badge badge-light">  Take me back </span>
           </button>

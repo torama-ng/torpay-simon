@@ -37,9 +37,8 @@
                     </div>
                     <div class="row">
                       <div class="col">
-                            filatei@gtsng.com
-                            olawefaodumu@gmail.com
-                            swagasoft@gmail.com
+                            Toramapay@gmail.com
+                            
                       </div>
                       <div class="col-5">
                        +2347065289391,

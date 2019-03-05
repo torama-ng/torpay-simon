@@ -5,17 +5,17 @@
     
   <ul class="nav nav-pills nav-justified">
     <li class="nav-item  ">
-      <a class="nav-link bg-dark" href="/trax">My transactions</a>
+      <a class="nav-link bg-dark" href="/trax ">My transactions</a>
     </li>
     
     <li class="nav-item ">
-      <a class="nav-link bg-dark " href="/paynow">pay now</a>
+      <a class="nav-link bg-dark " href="{{route('paynow')}} ">pay now</a>
     </li>
     <li class="nav-item  ">
-      <a class="nav-link bg-dark " href="/dash">Dashboard</a>
+      <a class="nav-link bg-dark " href="{{route('dash')}} ">Dashboard</a>
     </li>
     <li class="nav-item  ">
-      <a class="nav-link bg-dark " href="/profile">Profile</a>
+      <a class="nav-link bg-dark " href="{{route('profile')}} ">Profile</a>
     </li>
     
   </ul><br>
