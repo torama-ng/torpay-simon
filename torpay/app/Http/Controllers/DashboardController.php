@@ -9,6 +9,7 @@ use Auth;
 use App\Transaction;
 use App\Total_trax;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Auth\Middleware\Authenticate;
 
 class DashboardController extends Controller
 {
@@ -36,7 +37,9 @@ class DashboardController extends Controller
 
     // dashboard function
     public function dash(){
+       
         $current_user =  Auth::user()->email;
+        $tranx = \DB::table('transactions')->where('customer_name', $current_user)->get()->toArray();
         $tranx = \DB::table('transactions')->where('customer_name', $current_user)->get()->toArray();
         $total = \DB::table('total_traxs')->where('customer_name', $current_user)->get()->toArray();
         $last_tranx =  \DB::table('total_traxs')->where('customer_name', $current_user)->pluck('created_at')->last();
