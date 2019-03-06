@@ -13,7 +13,8 @@ $gtpay_tranx_curr = "566";
 $gtpay_tranx_amt = $_POST["gtpay_tranx_amt"]."00";
 $gtpay_tranx_memo = $_POST["gtpay_tranx_memo"];
 //$hundred ="00";
-$gtpay_tranx_noti_url = "http://localhost:8000/request";
+// $gtpay_tranx_noti_url = "http://localhost:8000/request";
+$gtpay_tranx_noti_url = "https://pay.torama.ng/request";
 
 //$hashed = $gtpay_mert_id.$gtpay_tranx_id.$gtpay_tranx_amt.$gtpay_tranx_curr.$gtpay_cust_id.$hashkey;
 $hashed = $gtpay_mert_id . $gtpay_tranx_id . $gtpay_tranx_amt . $gtpay_tranx_curr . $gtpay_cust_id . $gtpay_tranx_noti_url . $hashkey;
@@ -155,6 +156,7 @@ $gtpay_hash = hash('sha512', $hashed);
                             <h6 class="list-group-item"> Transaction id:  {{$gtpay_tranx_id}} </h6>
                             <h6 class="list-group-item"> Amount: # {{$gtpay_tranx_amt = $_POST["gtpay_tranx_amt"]}}</h6>
                             <h6 class="list-group-item">Customer id: {{$gtpay_cust_id}}</h6>
+                            <h6 class="list-group-item">Memo : {{$_POST["gtpay_tranx_memo"]}} </h6>
                             <h6 class="list-group-item"> Customer name: {{$gtpay_cust_name}}</h6> 
                            
                         </div>

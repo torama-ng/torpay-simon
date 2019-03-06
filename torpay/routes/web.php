@@ -32,7 +32,7 @@ Route::get('/payment', 'DashboardController@payment')->name('payment');
 Route::post('/payment', 'DashboardController@payment_post')->name('post_payment');
 Route::post('/request', 'DashboardController@request');
 Route::get('/admin', 'DashboardController@admin')->name('admin');
-Route::get('/services', 'pagesController@services')->name('services');
+Route::get('/services', 'PagesController@services')->name('services');
 Route::get('/about', 'PagesController@about')->name('about');
 Route::get('/privacy', 'PagesController@privacy')->name('privacy');
 Route::get('/policy', 'PagesController@policy')->name('policy');

@@ -60,7 +60,7 @@ class DashboardController extends Controller
     // pay now function
     public function paynow(){ 
         $user_email =  Auth::user()->email;
-        $user_id =  \DB::table('users')->where('email', $user_email)->pluck('id');
+        $user_id =  \DB::table('users')->where('email', $user_email)->value('id');
         return view('pages.paynow', compact('user_id'));
     }
 

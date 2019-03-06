@@ -57,7 +57,7 @@ $gtpay_tranx_id =  md5(uniqid(rand(), true));
             <br>
            
               <div class="container">
-                <span class="label label-primary">Trasaction id</span>
+                {{-- <span class="label label-primary">Trasaction id</span> --}}
                   <input type="show" readonly class="form-control"  name="gtpay_tranx_id" value="<?php echo $gtpay_tranx_id; ?>"  />
               </div>
               <div class="container">
@@ -67,15 +67,15 @@ $gtpay_tranx_id =  md5(uniqid(rand(), true));
            
               <div class="container">
                   <span class="label label-primary">Transacton amount</span>
-                  <input type="show"  class="form-control"  name="gtpay_tranx_amt" placeholder="Transaction amount"  />
+                  <input type="show"  class="form-control"  name="gtpay_tranx_amt"   />
               </div>
               <div class="container">
                   <span class="label label-primary">Customer name</span>
-                  <input type="text"  class="form-control" name="gtpay_cust_name" placeholder="your name"  value="{{ Auth::user()->name }}" />
+                  <input type="text"  class="form-control" name="gtpay_cust_name"   value="{{ Auth::user()->name }}" />
               </div>
               <div class="container">
                   <span class="label label-primary">Memo</span>
-                  <input type="text"  class="form-control"  name="gtpay_tranx_memo" placeholder="Memo. e.g school fee."  />
+                  <input type="text"  class="form-control"  name="gtpay_tranx_memo" placeholder=" e.g school fee."  />
               </div>
 
            
