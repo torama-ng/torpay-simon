@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
   
-<div class="container alert alert-warning">
+<div class="container alert alert-warning text-center">
     
                 <ul class="nav nav-pills nav-justified">
                   <li class="nav-item  ">
@@ -23,11 +23,11 @@
               
              
               </div>
-<div class="container bg-secondary">
+<div class="container bg-secondary text-center">
     
   <a href="/trax ">
-    <button type="button" class="btn btn-success">
-         <span class="badge badge-light"> Take me back   </span>
+    <button type="button" class="btn ">
+         <span class="badge badge-light"> Back  </span>
       </button>
     </a>
      @foreach ($this_trax as $item)

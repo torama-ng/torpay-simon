@@ -66,17 +66,17 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td><h4 class="alert alert-success">Successful Transactiions</h4>  </td>
+                          <td><h4 class="alert alert-success">Completed Transactions</h4>  </td>
                           <td> :</td>
                           <td><h4 class="alert alert-success"> {{$success_ful_trax}}</h4></td>
                         </tr>
                         <tr>
-                          <td><h4 class="alert alert-info">All my transactions</h4> </td>
+                          <td><h4 class="alert alert-info">Attempt</h4> </td>
                           <td> :</td>
                           <td><h4 class=" alert alert-info">{{$my_total_trax}}</h4></td>
                         </tr>
                         <tr>
-                          <td> <h4 class="alert alert-danger">Failed transaction</h4></td>
+                          <td> <h4 class="alert alert-danger">Incomplete Transactions</h4></td>
                           <td> :</td>
                           <td> <h4 class="alert alert-danger" >{{$failed}}</h4></td>
                         </tr>

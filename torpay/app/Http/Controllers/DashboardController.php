@@ -39,15 +39,20 @@ class DashboardController extends Controller
     public function dash(){
        
         $current_user =  Auth::user()->email;
-        $tranx = \DB::table('transactions')->where('customer_name', $current_user)->get()->toArray();
-        $tranx = \DB::table('transactions')->where('customer_name', $current_user)->get()->toArray();
-        $total = \DB::table('total_traxs')->where('customer_name', $current_user)->get()->toArray();
-        $last_tranx =  \DB::table('total_traxs')->where('customer_name', $current_user)->pluck('created_at')->last();
-        $success_ful_trax  = count( $tranx);
-        $my_total_trax  = count( $total);
-        $failed = ($my_total_trax - $success_ful_trax);
-        return view('pages.dashboard', compact('success_ful_trax', 'my_total_trax','failed',
-        'last_tranx'));
+        if ($current_user =='toramapay@gmail.com'){
+            return redirect('/admin');
+        }else{
+            $tranx = \DB::table('transactions')->where('customer_name', $current_user)->get()->toArray();
+            $tranx = \DB::table('transactions')->where('customer_name', $current_user)->get()->toArray();
+            $total = \DB::table('total_traxs')->where('customer_name', $current_user)->get()->toArray();
+            $last_tranx =  \DB::table('total_traxs')->where('customer_name', $current_user)->pluck('created_at')->last();
+            $success_ful_trax  = count( $tranx);
+            $my_total_trax  = count( $total);
+            $failed = ($my_total_trax - $success_ful_trax);
+            return view('pages.dashboard', compact('success_ful_trax', 'my_total_trax','failed',
+            'last_tranx'));
+        }
+      
 
     }
 

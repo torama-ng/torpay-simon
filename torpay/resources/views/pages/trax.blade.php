@@ -25,13 +25,13 @@
 <div class="container">
 
   <a href="/trax">
-    <button type="button" class="btn btn-success">
-      <span class="badge badge-light">   Successful    {{$total}}</span>
+    <button type="button" class="btn btn-info">
+      <span class="badge badge-light">   Completed   {{$total}}</span>
       </button>
     </a>
     <a href="/all_transactions">
-    <button type="button" class="btn btn-warning">
-       <span class="badge badge-light">     Sent  {{$count_all_tranx}}</span>
+    <button type="button" class="btn-info ">
+       <span class="badge badge-light">     Attempt {{$count_all_tranx}}</span>
       </button>
     </a>
 

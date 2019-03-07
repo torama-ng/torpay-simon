@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
   
-<div class="container alert alert-warning">
+<div class="container alert alert-warning text-center">
     
                 <ul class="nav nav-pills nav-justified">
                   <li class="nav-item  ">
@@ -23,9 +23,9 @@
               
              
               </div>
-<div class="container bg-secondary">
+<div class="container bg-secondary text-center">
     <a href="{{route('all_transactions')}} ">
-        <button type="button" class="btn btn-warning">
+        <button type="button" class="btn ">
             <span class="badge badge-light">  Take me back </span>
           </button>
         </a>
