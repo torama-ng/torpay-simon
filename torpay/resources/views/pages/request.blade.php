@@ -66,6 +66,8 @@
                   <li class="list-group-item"> Customer id : {{$gtpay_cust_id}} </li>
                   <li class="list-group-item"> Customer name : {{$gtpay_echo_data}} </li>
                   <li class="list-group-item">  Transaction id : {{$gtpay_tranx_id}} </li>
+                  <li class="list-group-item alert alert-info">  Click PAYNOW button on the top menu to try again. </li>
+
                 </ul>
                </div>
                  @break
@@ -80,6 +82,8 @@
                       <li class="list-group-item"> Customer id : {{$gtpay_cust_id}} </li>
                       <li class="list-group-item"> Customer name : {{$gtpay_echo_data}} </li>
                       <li class="list-group-item">  Transaction id : {{$gtpay_tranx_id}} </li>
+                      <li class="list-group-item alert alert-info">  Click PAYNOW button on the top menu to try again. </li>
+
                     </ul>
                    </div>
                      @break
@@ -94,6 +98,8 @@
                           <li class="list-group-item"> Customer id : {{$gtpay_cust_id}} </li>
                           <li class="list-group-item"> Customer name : {{$gtpay_echo_data}} </li>
                           <li class="list-group-item">  Transaction id : {{$gtpay_tranx_id}} </li>
+                          <li class="list-group-item alert alert-info">  Click PAYNOW button on the top menu to try again. </li>
+
                         </ul>
                        </div>
                          @break
@@ -108,6 +114,8 @@
                           <li class="list-group-item"> Customer id : {{$gtpay_cust_id}} </li>
                           <li class="list-group-item"> Customer name : {{$gtpay_echo_data}} </li>
                           <li class="list-group-item">  Transaction id : {{$gtpay_tranx_id}} </li>
+                          <li class="list-group-item alert alert-info">  Click PAYNOW button on the top menu to try again. </li>
+
                         </ul>
                        </div>
                          @break
@@ -122,6 +130,8 @@
                           <li class="list-group-item"> Customer id : {{$gtpay_cust_id}} </li>
                           <li class="list-group-item"> Customer name : {{$gtpay_echo_data}} </li>
                           <li class="list-group-item">  Transaction id : {{$gtpay_tranx_id}} </li>
+                          <li class="list-group-item alert alert-info">  Click PAYNOW button on the top menu to try again. </li>
+
                         </ul>
                        </div>
                          @break
@@ -136,6 +146,8 @@
                           <li class="list-group-item"> Customer id : {{$gtpay_cust_id}} </li>
                           <li class="list-group-item"> Customer name : {{$gtpay_echo_data}} </li>
                           <li class="list-group-item">  Transaction id : {{$gtpay_tranx_id}} </li>
+                          <li class="list-group-item alert alert-info">  Click PAYNOW button on the top menu to try again. </li>
+
                         </ul>
                        </div>
                          @break
@@ -150,6 +162,8 @@
                           <li class="list-group-item"> Customer id : {{$gtpay_cust_id}} </li>
                           <li class="list-group-item"> Customer name : {{$gtpay_echo_data}} </li>
                           <li class="list-group-item">  Transaction id : {{$gtpay_tranx_id}} </li>
+                          <li class="list-group-item alert alert-info">  Click PAYNOW button on the top menu to try again. </li>
+
                         </ul>
                        </div>
                          @break
@@ -164,6 +178,7 @@
                           <li class="list-group-item"> Customer id : {{$gtpay_cust_id}} </li>
                           <li class="list-group-item"> Customer name : {{$gtpay_echo_data}} </li>
                           <li class="list-group-item">  Transaction id : {{$gtpay_tranx_id}} </li>
+                          <li class="list-group-item alert alert-info">  Click PAYNOW button on the top menu to try again. </li>
                         </ul>
                        </div>
                          @break
@@ -179,6 +194,7 @@
                   <li class="list-group-item"> Customer id : {{$gtpay_cust_id}} </li>
                   <li class="list-group-item"> Customer name : {{$gtpay_echo_data}} </li>
                   <li class="list-group-item">  Transaction id : {{$gtpay_tranx_id}} </li>
+                  <li class="list-group-item alert alert-info">  Click PAYNOW button on the top menu to try again. </li>
                 </ul>
                </div>
          @endswitch
